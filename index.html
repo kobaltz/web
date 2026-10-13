@@ -3,114 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>God's Got Your Back - Finding Peace in the Storm</title>
+    <title>God's Got Your Back - Book Promotion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for the book mockup */
+        .book-spine {
+            box-shadow: -5px 0 10px rgba(0,0,0,0.2) inset;
+        }
+    </style>
 </head>
-<body class="font-sans antialiased text-gray-900 bg-stone-50">
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
 
     <!-- Navigation -->
-    <nav class="w-full py-4 bg-white shadow-sm fixed top-0 z-50 border-b border-stone-200">
+    <nav class="w-full py-4 bg-white/95 backdrop-blur-sm shadow-sm fixed top-0 z-50 border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-            <a href="#" class="text-2xl font-serif font-bold text-blue-900">God's Got Your Back</a>
-            <div class="flex space-x-4">
-                <a href="#about" class="text-stone-600 hover:text-blue-900 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">About the Book</a>
-                <a href="#preview" class="text-stone-600 hover:text-blue-900 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Preview</a>
-                <a href="#contact" class="bg-blue-900 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-800 transition duration-150 ease-in-out">Get Your Copy</a>
+            <a href="#" class="text-2xl font-serif font-bold text-blue-900 tracking-tight">God's Got Your Back</a>
+            <div class="flex items-center space-x-6">
+                <a href="#about" class="hidden md:block text-gray-600 hover:text-blue-900 font-medium transition">About</a>
+                <a href="#preview" class="hidden md:block text-gray-600 hover:text-blue-900 font-medium transition">Excerpt</a>
+                <a href="#testimonials" class="hidden md:block text-gray-600 hover:text-blue-900 font-medium transition">Reviews</a>
+                <a href="#order" class="bg-blue-900 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-blue-800 transition shadow-md">Order Now</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="pt-32 pb-24 bg-gradient-to-b from-blue-50 to-stone-50 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h1 class="text-4xl tracking-tight font-serif font-extrabold text-stone-900 sm:text-5xl md:text-6xl mb-6">
-                God is in control, even when you can't see the path.
-            </h1>
-            <p class="mt-4 max-w-2xl mx-auto text-xl text-stone-600 sm:mt-5">
-                Discover 100 powerful insights to help you trust Him through life's storms. A daily reminder that His hand is always upon you.
-            </p>
-            <div class="mt-8 flex justify-center gap-4">
-                <a href="#contact" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-900 hover:bg-blue-800 md:py-4 md:text-lg md:px-10 transition duration-150 ease-in-out shadow-lg">
-                    Order Now
-                </a>
-                <a href="#about" class="px-8 py-3 border border-stone-300 text-base font-medium rounded-md text-blue-900 bg-white hover:bg-stone-50 md:py-4 md:text-lg md:px-10 transition duration-150 ease-in-out">
-                    Learn More
-                </a>
+    <header class="pt-32 pb-24 lg:pt-40 lg:pb-32 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                <!-- Text Content -->
+                <div class="lg:col-span-6 text-center lg:text-left mb-12 lg:mb-0">
+                    <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider mb-4">New Release</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-gray-900 leading-tight mb-6">
+                        Discover God's Sovereignty in <span class="text-blue-900 relative">Every Detail.
+                            <svg class="absolute w-full h-3 -bottom-1 left-0 text-blue-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="8" fill="none"/></svg>
+                        </span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                        "God's Got Your Back" is a collection of 100 distinct insights designed to help you trust His plan, even when the path seems unclear. 
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#order" class="px-8 py-4 bg-blue-900 text-white rounded-lg font-semibold hover:bg-blue-800 transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                            Get Your Copy
+                        </a>
+                        <a href="#preview" class="px-8 py-4 bg-white text-gray-700 border border-gray-200 rounded-lg font-semibold hover:bg-gray-50 transition flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11A7 7 0 0112 4m7 7a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
+                            Read Preview
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Book Mockup Visual -->
+                <div class="lg:col-span-6 flex justify-center lg:justify-end perspective-1000">
+                    <!-- CSS Only Book Cover -->
+                    <div class="relative w-64 h-96 md:w-72 md:h-[500px] bg-blue-900 rounded-r-lg shadow-2xl transform rotate-y-[-15deg] hover:rotate-y-0 transition duration-700 ease-in-out border-l-4 border-white/20" style="transform-style: preserve-3d;">
+                        <!-- Cover Design -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-indigo-900 rounded-r-lg flex flex-col items-center justify-center p-8 text-center border-b-8 border-blue-950">
+                            <div class="w-24 h-1 bg-yellow-400/50 mb-8"></div>
+                            <h3 class="text-white font-serif text-3xl leading-tight font-bold mb-2">God's Got<br>Your Back</h3>
+                            <div class="w-16 h-1 bg-white/30 my-4"></div>
+                            <p class="text-blue-200 text-sm italic">Finding peace in His control</p>
+                            <div class="mt-auto pt-8 text-gray-300 text-xs uppercase tracking-widest border-t border-white/10 w-full">Available Now</div>
+                        </div>
+                        <!-- Spine -->
+                        <div class="absolute left-0 top-0 bottom-0 w-4 bg-blue-950 origin-left rounded-l transform -translate-x-full" style="transform: translateX(-100%) rotateY(90deg);"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+    <section id="about" class="py-24 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-serif font-bold text-stone-900 sm:text-4xl mb-6">About the Book</h2>
-            <div class="prose prose-lg mx-auto text-stone-600">
-                <p class="mb-6">
-                    In a world that feels increasingly chaotic, finding a sense of peace can be difficult. "God's Got Your Back" is more than just a book; it is a collection of 100 distinct ideas and reminders designed to anchor your soul.
-                </p>
-                <p class="mb-6">
-                    Each insight focuses on the concept of God's sovereignty—proving that He is not only watching but actively working for your good. Whether you are facing a major life transition or dealing with daily stresses, these pages offer spiritual comfort and perspective.
-                </p>
+            <h2 class="text-3xl font-serif font-bold text-gray-900 mb-6">Why This Book?</h2>
+            <div class="w-16 h-1 bg-blue-900 mx-auto mb-8"></div>
+            <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                In a world that feels increasingly chaotic, finding a sense of peace can be difficult. "God's Got Your Back" is more than just a book; it is a collection of 100 distinct ideas and reminders designed to anchor your soul.
+            </p>
+            <blockquote class="text-lg italic text-gray-500 border-l-4 border-blue-200 pl-4 text-left">
+                "I found the strength I was looking for right here. A beautiful reminder that He is always in control."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="preview" class="py-24 bg-stone-50 relative">
+        <!-- Decoration -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-5">
+             <svg width="100%" height="100%"><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="black" stroke-width="1"/></pattern><rect width="100%" height="100%" fill="url(#grid)" /></svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-blue-900 font-bold tracking-wider uppercase text-sm">Inside the Pages</span>
+                <h2 class="mt-2 text-3xl md:text-4xl font-serif font-bold text-gray-900">100 Ways God is in Control</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Idea 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition duration-300 border-t-4 border-blue-900">
+                    <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-blue-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Peace in the Storm</h3>
+                    <p class="text-gray-600 leading-relaxed">Learn how to find stillness even when the winds of life are blowing hard against you.</p>
+                </div>
+
+                <!-- Idea 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition duration-300 border-t-4 border-blue-700">
+                    <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-blue-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Trust the Timing</h3>
+                    <p class="text-gray-600 leading-relaxed">Understanding that God's schedule is perfect, even when His reasons are a mystery.</p>
+                </div>
+
+                <!-- Idea 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition duration-300 border-t-4 border-blue-500">
+                    <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-blue-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Strength in Weakness</h3>
+                    <p class="text-gray-600 leading-relaxed">Discovering where your power ends and His begins, and finding freedom there.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- What You'll Find Section -->
-    <section id="preview" class="py-20 bg-stone-100">
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-24 bg-blue-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-base font-semibold text-blue-900 tracking-wide uppercase">What You'll Discover</h2>
-                <p class="mt-2 text-3xl leading-8 font-serif font-extrabold tracking-tight text-stone-900 sm:text-4xl">
-                    100 Ways God is in Control
-                </p>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-bold">What Readers Are Saying</h2>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <!-- Idea 1 -->
-                <div class="bg-white p-8 rounded-xl shadow-md text-center transform hover:-translate-y-1 transition duration-300">
-                    <div class="text-blue-900 mb-4 text-4xl font-serif italic">"</div>
-                    <h3 class="text-xl font-bold text-stone-900 mb-3">Peace in the Storm</h3>
-                    <p class="text-stone-600">Learn how to find stillness even when the winds of life are blowing hard against you.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-blue-800 p-6 rounded-lg relative">
+                    <svg class="absolute top-4 left-4 text-blue-600 h-8 w-8 opacity-50" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8v8h4v8l-4-6H6v-10h4zm16 0v8h4v8l-4-6h-4v-10h4z"></path></svg>
+                    <p class="text-blue-100 italic relative z-10 pt-6 mb-4">"This book was exactly what I needed during a hard time. Simple, profound truths about God's control."</p>
+                    <div class="font-bold text-white">— Sarah M.</div>
                 </div>
-
-                <!-- Idea 2 -->
-                <div class="bg-white p-8 rounded-xl shadow-md text-center transform hover:-translate-y-1 transition duration-300">
-                    <div class="text-blue-900 mb-4 text-4xl font-serif italic">"</div>
-                    <h3 class="text-xl font-bold text-stone-900 mb-3">Trust the Timing</h3>
-                    <p class="text-stone-600">Understanding that God's schedule is perfect, even when His reasons are a mystery.</p>
+                 <!-- Review 2 -->
+                 <div class="bg-blue-800 p-6 rounded-lg relative">
+                    <svg class="absolute top-4 left-4 text-blue-600 h-8 w-8 opacity-50" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8v8h4v8l-4-6H6v-10h4zm16 0v8h4v8l-4-6h-4v-10h4z"></path></svg>
+                    <p class="text-blue-100 italic relative z-10 pt-6 mb-4">"I read one chapter every morning. It sets the tone for my entire day. Highly recommended."</p>
+                    <div class="font-bold text-white">— James D.</div>
                 </div>
-
-                <!-- Idea 3 -->
-                <div class="bg-white p-8 rounded-xl shadow-md text-center transform hover:-translate-y-1 transition duration-300">
-                    <div class="text-blue-900 mb-4 text-4xl font-serif italic">"</div>
-                    <h3 class="text-xl font-bold text-stone-900 mb-3">Strength in Weakness</h3>
-                    <p class="text-stone-600">Discovering where your power ends and His begins, and finding freedom there.</p>
+                 <!-- Review 3 -->
+                 <div class="bg-blue-800 p-6 rounded-lg relative md:hidden lg:block">
+                    <svg class="absolute top-4 left-4 text-blue-600 h-8 w-8 opacity-50" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8v8h4v8l-4-6H6v-10h4zm16 0v8h4v8l-4-6h-4v-10h4z"></path></svg>
+                    <p class="text-blue-100 italic relative z-10 pt-6 mb-4">"Beautifully written and very comforting. It really drives home the point that He is in control."</p>
+                    <div class="font-bold text-white">— Emily R.</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Call to Action -->
-    <section id="contact" class="bg-blue-900 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div class="text-left">
-                <h2 class="text-3xl font-serif font-bold tracking-tight mb-2">Ready to find your peace?</h2>
-                <p class="text-blue-200 text-lg">Grab your copy of "God's Got Your Back" today and start seeing His hand in everything.</p>
-            </div>
-            <div>
-                <a href="#" class="inline-block bg-white text-blue-900 font-bold px-8 py-4 rounded-md shadow hover:bg-stone-100 transition duration-150 ease-in-out">
-                    Order Now &rarr;
-                </a>
+    <section id="order" class="bg-gray-50 py-20 border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-serif font-bold text-gray-900 mb-4">Ready to find your peace?</h2>
+            <p class="text-xl text-gray-600 mb-10">Grab your copy of "God's Got Your Back" today and start seeing His hand in everything.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
+                <button class="w-full px-8 py-4 bg-blue-900 text-white rounded-lg font-bold hover:bg-blue-800 transition shadow-lg">
+                    Buy on Amazon
+                </button>
+                <button class="w-full px-8 py-4 bg-white text-gray-700 border border-gray-300 rounded-lg font-bold hover:bg-gray-50 transition">
+                    Read Free Sample
+                </button>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-stone-900 text-stone-400 py-8 border-t border-stone-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-sm">
-                &copy; 2023 God's Got Your Back. All rights reserved. Published by Web.
-            </p>
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-sm">&copy; 2023 God's Got Your Back. All rights reserved.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-white transition">Instagram</a>
+                <a href="#" class="hover:text-white transition">Facebook</a>
+                <a href="#" class="hover:text-white transition">Twitter</a>
+            </div>
         </div>
     </footer>
 
